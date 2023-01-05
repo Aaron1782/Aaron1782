@@ -1,5 +1,6 @@
+
+const port = 3000 || process.env.PORT;
 const express = require("express");
-const path = require("path");
 const app = express();
 const bodyParser = require("body-parser");
 
@@ -8,7 +9,7 @@ const bodyParser = require("body-parser");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-res.render()
+
  
   res.sendFile(__dirname + "/index.html");
 });
@@ -17,6 +18,6 @@ app.post("/", (req, res) => {
   res.send("Post request sent");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Now listening on port 3000");
 });
