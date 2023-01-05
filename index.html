@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">  
+            <a style="color: aliceblue;" >Password Generator</a>
+          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </div>
+      </nav>
+      <div id="generator-box" class="col-lg-6 container-sm text-center ">
+      <div class="card" style="width: 30rem; height: fit-content;">
+        <div class="card-body">
+          <h5 class="card-title" id="heading">Password Generator</h5>
+
+ <div class="row" >
+    
+    <div class="col" id="tickbox">
+    <label for="customRange1" class="form-label">Password Length</label>
+    <input type="range" class="form-range text-dark" id="customRange1" min="1" max="30">
+
+    <div class="form-check " id="length-checkbox">
+        <input class="form-check-input bg-primary" type="checkbox" value="" id="flexCheckChecked" checked>
+
+          Special Characters?
+        </label>
+    </div>
+    </div>
+    <div class="col">
+        <img id="password-img" src="https://icons.iconarchive.com/icons/icons8/windows-8/256/Security-Password-2-icon.png" alt="Image">
+    </div>
+ 
+
+ </div>
+ 
+          <div class="form-group">
+            <div class="form-floating mb-3" >
+                <input type="text" class="form-control" id="floatingInputDisabled"  disabled>
+                <label for="floatingInputDisabled"></label>
+              </div>
+              <button id="button" type="button" class="btn btn-outline-dark btn-lg ">Generate</button>
+          </div>
+         
+      </div>
+      
+    </div>
+    <footer>@Aaron 2023</footer>
+</body>
+</html>
